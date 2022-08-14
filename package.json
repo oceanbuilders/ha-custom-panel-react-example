@@ -1,0 +1,51 @@
+{
+  "name": "ob-support-panel",
+  "version": "0.1.0",
+  "panelServingUrl": "/local/support-panel",
+  "main": "index.tsx",
+  "scripts": {
+    "build": "webpack --config-name development && shx cp build/ob-support-panel.js //homeassistant.local/config/www/support-panel/ob-support-panel.js",
+    "build-dev-tools": "webpack --config-name devtools && shx cp build/ob-support-panel.js //homeassistant.local/config/www/support-panel/ob-support-panel.js",
+    "build-prod": "webpack --config-name production",
+    "start": "webpack serve"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.18.5",
+    "@babel/preset-env": "^7.18.2",
+    "@babel/preset-react": "^7.17.12",
+    "@babel/preset-typescript": "^7.17.12",
+    "@types/react": "^18.0.14",
+    "@types/react-dom": "^18.0.5",
+    "autoprefixer": "^10.4.7",
+    "babel-loader": "^8.2.5",
+    "css-loader": "^6.7.1",
+    "css-modules-typescript-loader": "^4.0.1",
+    "file-loader": "^6.2.0",
+    "home-assistant-js-websocket": "^7.1.0",
+    "html-webpack-plugin": "^5.5.0",
+    "path": "^0.12.7",
+    "postcss": "^8.4.14",
+    "postcss-loader": "^7.0.0",
+    "postcss-preset-env": "^7.7.2",
+    "react-devtools": "^4.25.0",
+    "shx": "^0.3.4",
+    "style-loader": "^3.3.1",
+    "tailwindcss": "^3.1.5",
+    "ts-loader": "^9.3.1",
+    "webpack": "^5.73.0",
+    "webpack-cli": "^4.10.0",
+    "webpack-dev-server": "^4.9.2"
+  },
+  "dependencies": {
+    "@material-tailwind/react": "^1.2.2",
+    "@reduxjs/toolkit": "^1.8.3",
+    "npm-check-updates": "^14.1.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-redux": "^8.0.2",
+    "typescript": "^4.7.4"
+  }
+}
